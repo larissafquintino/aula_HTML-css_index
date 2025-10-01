@@ -1,0 +1,132 @@
+/* Universal para todo projeto */
+* { 
+    box-sizing: border-box; /* estabelecer o tamanho do elemento como um todo na página */
+}
+
+body {
+    margin: 0; /* Retirar a margem do html */
+    font-family: sans-serif;
+}
+
+
+.header {
+    background-color: black;
+    border-bottom: 3px solid #32b9cd; /* solid permitirá que a borda apareça no site */
+}
+
+/* irá estilizar apenas a class container que está dentro da classe header */
+.header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 120px; /* o primeiro valor (0) é o que está em cima e em baixo e o 120px é a direita e esquerda */
+}
+
+.titulo {
+    color: #32b9cd;
+}
+
+.navbar {
+    display: flex;
+    list-style: none; /* tirar o formato lista */
+    width: 300px;
+    justify-content: space-between;
+    color: #e3b062;
+}
+
+.navbar a {
+    color: #e3b062;
+    outline: none;
+    text-decoration: none;
+}
+
+.agora {
+    font-weight: bolder; /* permitir que a página atual fique destacado no menu*/
+}
+
+.banner {
+    height: 400px;
+    width: 100%;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+}
+
+.banner .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .container p {
+    width: 170px;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.banner .container span {
+    font-weight: bold;
+}
+
+.social {
+    height: 400px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+
+.social .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box img {
+    width: 120px;
+    height: 120px;
+}
+
+.box h4 {
+    margin: 0;
+    margin-top: 10px;
+    color: #ed145b;
+}
+
+.footer {
+    height: 120px;
+    width: 100%;
+    background-color: #32b9cd;
+}
+
+.footer .container {
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+
+}
+
+.footer h4 {
+    margin-bottom: 0;
+}
